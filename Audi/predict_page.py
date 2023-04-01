@@ -27,7 +27,7 @@ def show_predict_page():
 
     mileage = st.number_input("Mileage",min_value=0.)
 
-    fueltype = st.selectbox("Country",fueltypes)
+    fueltype = st.selectbox("Fuel Type",fueltypes)
     fueltype = le_fueltype.transform([fueltype])[0]
 
     tax = st.number_input("tax",min_value=0.)
